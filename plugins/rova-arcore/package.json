@@ -1,0 +1,26 @@
+{
+  "name": "@rova/arcore",
+  "version": "1.0.0",
+  "description": "ROVA ARCore Capacitor plugin — plane detection, hit-test, anchors",
+  "main": "dist/plugin.cjs.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "files": ["android/", "dist/"],
+  "scripts": {
+    "build": "tsc && rollup -c rollup.config.mjs 2>/dev/null || npm run build:ts",
+    "build:ts": "tsc"
+  },
+  "peerDependencies": {
+    "@capacitor/core": "^6.0.0"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^6.2.0",
+    "@capacitor/core": "^6.2.0",
+    "typescript": "^5.8.0"
+  },
+  "capacitor": {
+    "android": {
+      "src": "android"
+    }
+  }
+}
