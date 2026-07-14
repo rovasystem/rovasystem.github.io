@@ -120,14 +120,15 @@
       <form
         class="wait-form"
         id="waitlistForm"
-        action="https://formsubmit.co/rova.system.solutions@gmail.com"
+        action="https://api.web3forms.com/submit"
         method="POST"
       >
-        <input type="hidden" name="_subject" value="ROVA Waitlist signup" />
-        <input type="hidden" name="_captcha" value="false" />
-        <input type="hidden" name="_template" value="table" />
-        <input type="hidden" name="_next" value="https://rovasystem.github.io/thank-you.html" />
-        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+        <!-- Get your free key at https://web3forms.com (enter rova.system.solutions@gmail.com) -->
+        <input type="hidden" name="access_key" value="5fc35876-d059-4eba-8297-60dcc11f2766" />
+        <input type="hidden" name="subject" value="ROVA Waitlist signup" />
+        <input type="hidden" name="from_name" value="ROVA Waitlist" />
+        <input type="hidden" name="redirect" value="https://rovasystem.github.io/thank-you.html" />
+        <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off" />
 
         <input name="name" placeholder="Full name *" required autocomplete="name" />
         <input name="email" type="email" placeholder="Email *" required autocomplete="email" />
@@ -154,7 +155,6 @@
         </label>
 
         <button type="submit" class="submit-btn">Request pilot access</button>
-        <p class="form-note">After submitting, check your inbox if this is the first signup — FormSubmit may ask you to confirm the email once.</p>
       </form>
     </section>
 
