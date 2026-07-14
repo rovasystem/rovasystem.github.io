@@ -117,7 +117,20 @@
       <h2>Join the free pilot</h2>
       <p>Add your company to the waitlist. We'll reach out with access and a short onboarding.</p>
 
-      <form class="wait-form" id="waitlistForm" novalidate>
+      <form
+        class="wait-form"
+        id="waitlistForm"
+        action="https://formsubmit.co/rova.system.solutions@gmail.com"
+        method="POST"
+        novalidate
+      >
+        <input type="hidden" name="_subject" value="ROVA Waitlist signup" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_next" id="formNext" value="" />
+        <input type="hidden" name="_replyto" id="formReplyTo" value="" />
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+
         <input name="name" placeholder="Full name *" required autocomplete="name" />
         <input name="email" type="email" placeholder="Email *" required autocomplete="email" />
         <input name="company" placeholder="Company name" autocomplete="organization" />
@@ -138,7 +151,7 @@
         <input type="hidden" name="utm_campaign" id="utmCampaign" />
 
         <label class="consent">
-          <input type="checkbox" name="consent" required />
+          <input type="checkbox" id="consent" required />
           <span>I agree to be contacted about the ROVA pilot. We do not share your data with third parties.</span>
         </label>
 
