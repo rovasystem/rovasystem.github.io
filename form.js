@@ -66,9 +66,9 @@
     body.append("message", [
       payload.note,
       "",
-      "Zdroj: " + payload.source,
+      "Source: " + payload.source,
       "UTM: " + [payload.utm_source, payload.utm_medium, payload.utm_campaign].filter(Boolean).join(" / ") || "—",
-      "Čas: " + payload.createdAt
+      "Time: " + payload.createdAt
     ].join("\n"));
     body.append("_subject", "ROVA Waitlist — " + (payload.company || payload.name));
     body.append("_captcha", "false");
@@ -94,18 +94,18 @@
   form.addEventListener("submit", async (event) => {
     event.preventDefault();
     if (!form.consent?.checked) {
-      setStatus("Pre odoslanie je potrebný súhlas so spracovaním údajov.", "err");
+      setStatus("Consent is required before submitting.", "err");
       return;
     }
 
     const payload = buildPayload();
     if (!payload?.name || !payload.email) {
-      setStatus("Vyplňte prosím meno a email.", "err");
+      setStatus("Please enter your name and email.", "err");
       return;
     }
 
     submitBtn.disabled = true;
-    setStatus("Odosielam…");
+    setStatus("Sending…");
 
     try {
       if (await submitToApi(payload)) {
@@ -117,10 +117,10 @@
         return;
       }
       saveLocal(payload);
-      setStatus("Nepodarilo sa odoslať online. Údaje sú uložené lokálne — napíšte nám na " + (config.email || "rova.system.solutions@gmail.com") + ".", "err");
+      setStatus("Could not send online. Your details were saved locally — email us at " + (config.email || "rova.system.solutions@gmail.com") + ".", "err");
     } catch (_) {
       saveLocal(payload);
-      setStatus("Chyba pri odosielaní. Skúste znova alebo nás kontaktujte priamo.", "err");
+      setStatus("Something went wrong. Please try again or contact us directly.", "err");
     } finally {
       submitBtn.disabled = false;
     }
