@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="sk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ROVA — Obhliadka, ponuka a zákazka bez chaosu</title>
+  <meta name="description" content="ROVA je stavebný operačný systém pre malé firmy na Slovensku. Obhliadka offline, ponuka za 15 minút, export do Pohody. Pilot zadarmo pre vybrané firmy." />
+  <meta property="og:title" content="ROVA Construction OS" />
+  <meta property="og:description" content="Obhliadka na stavbe. Ponuka večer. Bez papierov a Excelu. Local-first pre SK/CZ firmy." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#020612" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="orb orb-a"></div>
+  <div class="orb orb-b"></div>
+  <div class="noise"></div>
+
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="ROVA domov">
+        <span class="brand-mark" aria-hidden="true">R</span>
+        <span class="brand-text">
+          <strong>ROVA</strong>
+          <small>Construction OS</small>
+        </span>
+      </a>
+      <a class="top-cta" href="#waitlist">Pilot zadarmo</a>
+    </header>
+
+    <section class="hero">
+      <div class="pill"><span></span> Private beta · SK/CZ · local-first</div>
+      <p class="eyebrow">Stavebný OS pre malé firmy</p>
+      <h1>Obhliadka na stavbe.<br />Ponuka večer.<br />Bez papierov a Excelu.</h1>
+      <p class="lead">ROVA spája obhliadku, cenovú ponuku, zákazku a export do Pohody v jednej aplikácii — funguje aj bez internetu v pivnici alebo na novostavbe.</p>
+
+      <div class="trust">
+        <div><strong>Offline</strong><span>Funguje bez signálu na stavbe</span></div>
+        <div><strong>Local-first</strong><span>Dáta ostávajú u vás</span></div>
+        <div><strong>Žiadna kreditka</strong><span>Pilot pre vybrané firmy</span></div>
+      </div>
+
+      <div class="preview" aria-hidden="true">
+        <div class="preview-top">
+          <i></i><i></i><i></i>
+          <small>ROVA Command Center</small>
+        </div>
+        <div class="preview-grid">
+          <div class="metric highlight">
+            <small>Dnešný progres</small>
+            <strong>Obhliadka → ponuka</strong>
+            <span>Typicky do 15 minút</span>
+          </div>
+          <div class="metric">
+            <small>Terén</small>
+            <strong>7</strong>
+            <span>reportov s fotkami</span>
+          </div>
+          <div class="metric">
+            <small>Sync</small>
+            <strong>OK</strong>
+            <span>po pripojení</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="benefity">
+      <p class="eyebrow">Prečo ROVA</p>
+      <h2>Vyriešime chaos, ktorý poznáte z praxe.</h2>
+      <div class="benefits">
+        <article class="benefit">
+          <span class="benefit-num">01</span>
+          <strong>Funguje tam, kde Excel padá</strong>
+          <p>Obhliadka s fotkami a rozmermi offline. Po pripojení sa údaje doplnia do ponuky — bez večerného prepisovania zo zápisníka.</p>
+        </article>
+        <article class="benefit">
+          <span class="benefit-num">02</span>
+          <strong>Ponuka za minúty, nie hodiny</strong>
+          <p>Šablóny položiek zo SK trhu, profesionálne PDF s logom firmy a verzie ponuky keď zákazník mení rozsah.</p>
+        </article>
+        <article class="benefit">
+          <span class="benefit-num">03</span>
+          <strong>Od ponuky po Pohodu</strong>
+          <p>Prijatá ponuka → zákazka s úlohami. Export XML do Pohody — účtovníčka nemusí prepisovať ručne.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="ako">
+      <p class="eyebrow">Ako to funguje</p>
+      <h2>Tri kroky. Žiadne školenie na týždeň.</h2>
+      <div class="steps">
+        <div class="step">
+          <div>
+            <strong>Obhliadka na mieste</strong>
+            <p>Na mobile odfoťte steny, zadajte rozmery a poznámky. Všetko offline, priamo u zákazníka.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div>
+            <strong>Ponuka a PDF</strong>
+            <p>Z obhliadky vytvoríte ponuku, upravíte ceny a pošlete zákazníkovi prehľadné PDF — nie tabuľku v Exceli.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div>
+            <strong>Zákazka a export</strong>
+            <p>Schválená ponuka sa stane zákazkou s harmonogramom. Export do Pohody jedným klikom.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="waitlist" id="waitlist">
+      <p class="eyebrow">Early access waitlist</p>
+      <h2>Chcem pilot zadarmo</h2>
+      <p>Zapíšte firmu do poradovníka. Ozveme sa s prístupom a krátkym onboardingu — typicky do 48 hodín.</p>
+
+      <form class="wait-form" id="waitlistForm" novalidate>
+        <input name="name" placeholder="Meno a priezvisko *" required autocomplete="name" />
+        <input name="email" type="email" placeholder="Email *" required autocomplete="email" />
+        <input name="company" placeholder="Názov firmy" autocomplete="organization" />
+        <input name="phone" type="tel" placeholder="Telefón (voliteľné)" autocomplete="tel" />
+        <select name="segment" aria-label="Typ firmy">
+          <option value="">Typ firmy</option>
+          <option>Maliarstvo / rekonštrukcie</option>
+          <option>Elektro firma</option>
+          <option>Stavebná firma (všeobecne)</option>
+          <option>Developer</option>
+          <option>Iné</option>
+        </select>
+        <textarea name="note" placeholder="Koľko ľudí máte v tíme? Čo vás najviac trápi dnes?"></textarea>
+
+        <input type="hidden" name="source" value="instagram-waitlist" />
+        <input type="hidden" name="utm_source" id="utmSource" />
+        <input type="hidden" name="utm_medium" id="utmMedium" />
+        <input type="hidden" name="utm_campaign" id="utmCampaign" />
+
+        <label class="consent">
+          <input type="checkbox" name="consent" required />
+          <span>Súhlasím so spracovaním údajov pre kontaktovanie ohľadom ROVA pilotu. Údaje nezdieľame s tretími stranami.</span>
+        </label>
+
+        <button type="submit" class="submit-btn" id="submitBtn">Požiadať o pilot</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="section faq" id="faq">
+      <p class="eyebrow">FAQ</p>
+      <h2>Často sa pýtate</h2>
+      <details>
+        <summary>Koľko stojí pilot?</summary>
+        <p>Pre vybrané firmy z waitlistu je pilot bezplatný. Po pilotnej fáze ponúkame plány od 49 €/mesiac — bez viazanosti počas testu.</p>
+      </details>
+      <details>
+        <summary>Potrebujem internet na stavbe?</summary>
+        <p>Nie na obhliadku a prácu v teréne. ROVA je local-first — dáta sa synchronizujú, keď sa pripojíte.</p>
+      </details>
+      <details>
+        <summary>Pre aké veľké firmy je ROVA?</summary>
+        <p>Primárne pre firmy 3–50 ľudí: maliari, elektrikári, rekonštrukcie a menší generálni dodávatelia na SK/CZ trhu.</p>
+      </details>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 ROVA Construction OS · Slovensko</p>
+      <p>Windows + Android · Local-first · <a href="https://www.instagram.com/" rel="noopener" target="_blank">Sledujte nás na IG</a></p>
+    </footer>
+  </div>
+
+  <script>
+    window.ROVA_WAITLIST = {
+      // Zmeňte na váš email — FormSubmit pošle prihlášky priamo do schránky (zadarmo, bez servera).
+      email: "rova.system.solutions@gmail.com",
+      // Voliteľne: URL vášho ROVA API (napr. https://api.rova.sk/api/portal/waitlist)
+      apiUrl: ""
+    };
+  </script>
+  <script src="./form.js"></script>
+</body>
+</html>
