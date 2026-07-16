@@ -1,199 +1,30 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ROVA — Site visits, quotes, and jobs without the chaos</title>
-  <meta name="description" content="ROVA is a construction operating system for small contractors. Offline site visits, quotes in minutes, and accounting export. Free pilot for selected companies." />
-  <meta property="og:title" content="ROVA Construction OS" />
-  <meta property="og:description" content="Site visit in the field. Quote the same evening. No paper or Excel. Local-first for construction teams." />
-  <meta property="og:type" content="website" />
-  <meta name="theme-color" content="#020612" />
-  <link rel="stylesheet" href="./styles.css" />
-</head>
-<body>
-  <div class="orb orb-a"></div>
-  <div class="orb orb-b"></div>
-  <div class="noise"></div>
-
-  <div class="shell">
-    <header class="topbar">
-      <a class="brand" href="./" aria-label="ROVA home">
-        <span class="brand-mark" aria-hidden="true">R</span>
-        <span class="brand-text">
-          <strong>ROVA</strong>
-          <small>Construction OS</small>
-        </span>
-      </a>
-      <a class="top-cta" href="#waitlist">Free pilot</a>
-    </header>
-
-    <section class="hero">
-      <div class="pill"><span></span> Private beta · local-first</div>
-      <p class="eyebrow">Construction OS for small teams</p>
-      <h1>Site visit in the field.<br />Quote the same evening.<br />No paper or Excel.</h1>
-      <p class="lead">ROVA connects site visits, quotes, jobs, and accounting export in one app — and it works without internet in a basement or on a new build.</p>
-
-      <div class="trust">
-        <div><strong>Offline</strong><span>Works with no signal on site</span></div>
-        <div><strong>Local-first</strong><span>Your data stays with you</span></div>
-        <div><strong>No credit card</strong><span>Free pilot for selected teams</span></div>
-      </div>
-
-      <div class="preview" aria-hidden="true">
-        <div class="preview-top">
-          <i></i><i></i><i></i>
-          <small>ROVA Command Center</small>
-        </div>
-        <div class="preview-grid">
-          <div class="metric highlight">
-            <small>Today's progress</small>
-            <strong>Visit → quote</strong>
-            <span>Typically in 15 minutes</span>
-          </div>
-          <div class="metric">
-            <small>Field</small>
-            <strong>7</strong>
-            <span>reports with photos</span>
-          </div>
-          <div class="metric">
-            <small>Sync</small>
-            <strong>OK</strong>
-            <span>when connected</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="benefits">
-      <p class="eyebrow">Why ROVA</p>
-      <h2>We fix the chaos you already know.</h2>
-      <div class="benefits">
-        <article class="benefit">
-          <span class="benefit-num">01</span>
-          <strong>Works where Excel fails</strong>
-          <p>Capture site visits with photos and measurements offline. When you're back online, everything flows into the quote — no evening rewrite from a notebook.</p>
-        </article>
-        <article class="benefit">
-          <span class="benefit-num">02</span>
-          <strong>Quotes in minutes, not hours</strong>
-          <p>Item templates, branded PDFs, and quote versions when the client changes scope.</p>
-        </article>
-        <article class="benefit">
-          <span class="benefit-num">03</span>
-          <strong>From quote to accounting</strong>
-          <p>Accepted quote becomes a job with tasks. Export to your accounting system — no manual re-entry.</p>
-        </article>
-      </div>
-    </section>
-
-    <section class="section" id="how">
-      <p class="eyebrow">How it works</p>
-      <h2>Three steps. No week-long training.</h2>
-      <div class="steps">
-        <div class="step">
-          <div>
-            <strong>Site visit on location</strong>
-            <p>On your phone, photograph walls, enter dimensions and notes. All offline, right at the client's site.</p>
-          </div>
-        </div>
-        <div class="step">
-          <div>
-            <strong>Quote and PDF</strong>
-            <p>Turn the visit into a quote, adjust pricing, and send a clean PDF — not an Excel spreadsheet.</p>
-          </div>
-        </div>
-        <div class="step">
-          <div>
-            <strong>Job and export</strong>
-            <p>Approved quote becomes a scheduled job. Export to accounting in one click.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="waitlist" id="waitlist">
-      <p class="eyebrow">Early access waitlist</p>
-      <h2>Join the free pilot</h2>
-      <p>Add your company to the waitlist. We'll reach out with access and a short onboarding.</p>
-
-      <form
-        class="wait-form"
-        id="waitlistForm"
-        action="https://api.web3forms.com/submit"
-        method="POST"
-      >
-        <!-- Get your free key at https://web3forms.com (enter rova.system.solutions@gmail.com) -->
-        <input type="hidden" name="access_key" value="5fc35876-d059-4eba-8297-60dcc11f2766" />
-        <input type="hidden" name="subject" value="ROVA Waitlist signup" />
-        <input type="hidden" name="from_name" value="ROVA Waitlist" />
-        <input type="hidden" name="redirect" value="https://rovasystem.github.io/thank-you.html" />
-        <input type="checkbox" name="botcheck" class="hidden" style="display:none" tabindex="-1" autocomplete="off" />
-
-        <input name="name" placeholder="Full name *" required autocomplete="name" />
-        <input name="email" type="email" placeholder="Email *" required autocomplete="email" />
-        <input name="company" placeholder="Company name" autocomplete="organization" />
-        <input name="phone" type="tel" placeholder="Phone (optional)" autocomplete="tel" />
-        <select name="segment" aria-label="Company type">
-          <option value="">Company type</option>
-          <option>Painting / renovations</option>
-          <option>Electrical contractor</option>
-          <option>General contractor</option>
-          <option>Developer</option>
-          <option>Other</option>
-        </select>
-        <textarea name="note" placeholder="How big is your team? What's your biggest pain point today?"></textarea>
-
-        <input type="hidden" name="source" value="instagram-waitlist" />
-        <input type="hidden" name="utm_source" id="utmSource" />
-        <input type="hidden" name="utm_medium" id="utmMedium" />
-        <input type="hidden" name="utm_campaign" id="utmCampaign" />
-
-        <label class="consent">
-          <input type="checkbox" name="consent" value="yes" required />
-          <span>I agree to be contacted about the ROVA pilot. We do not share your data with third parties.</span>
-        </label>
-
-        <button type="submit" class="submit-btn">Request pilot access</button>
-      </form>
-    </section>
-
-    <section class="section faq" id="faq">
-      <p class="eyebrow">FAQ</p>
-      <h2>Common questions</h2>
-      <details>
-        <summary>How much does the pilot cost?</summary>
-        <p>The pilot is free for selected waitlist companies. After the pilot, plans start at €49/month — no commitment during the trial.</p>
-      </details>
-      <details>
-        <summary>Do I need internet on site?</summary>
-        <p>Not for site visits and field work. ROVA is local-first — data syncs when you reconnect.</p>
-      </details>
-      <details>
-        <summary>What size companies is ROVA for?</summary>
-        <p>Primarily teams of 3–50 people: painters, electricians, renovation crews, and smaller general contractors.</p>
-      </details>
-    </section>
-
-    <footer class="footer">
-      <p>© 2026 ROVA Construction OS</p>
-      <p>Windows + Android · Local-first · <a href="https://www.instagram.com/" rel="noopener" target="_blank">Follow us on IG</a></p>
-    </footer>
-  </div>
-
-  <script>
-    (function () {
-      const params = new URLSearchParams(window.location.search);
-      const map = { utm_source: "utmSource", utm_medium: "utmMedium", utm_campaign: "utmCampaign" };
-      Object.entries(map).forEach(([key, id]) => {
-        const el = document.getElementById(id);
-        if (el && params.get(key)) el.value = params.get(key);
-      });
-      if (!params.get("utm_source") && document.referrer.includes("instagram")) {
-        const src = document.getElementById("utmSource");
-        if (src) src.value = "instagram";
-      }
-    })();
-  </script>
-</body>
+<!DOCTYPE html>
+<html lang="en" class="waitlist-route">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ROVA Construction OS — Early Access Waitlist</title>
+    <meta
+      name="description"
+      content="Private beta waitlist for ROVA Construction OS — local-first software for small construction teams. Free pilot. No credit card."
+    />
+    <meta property="og:title" content="ROVA Construction OS" />
+    <meta
+      property="og:description"
+      content="Site visit in the field. Quote the same evening. No paper or Excel. Local-first for construction teams."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#050a12" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/assets/waitlist-D23z-Zmb.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/waitlist-BqWuW8pd.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
 </html>
