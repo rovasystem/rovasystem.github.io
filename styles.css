@@ -99,16 +99,13 @@ body {
 }
 
 .brand-mark {
-  width: 42px;
-  height: 42px;
-  border-radius: 14px;
-  display: grid;
-  place-items: center;
-  font-weight: 1000;
-  font-size: 22px;
-  color: #03101c;
-  background: linear-gradient(135deg, var(--cyan), var(--blue) 52%, var(--violet));
-  box-shadow: 0 0 28px rgba(56, 189, 248, 0.32);
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  display: block;
+  object-fit: contain;
+  background: #000;
+  flex-shrink: 0;
 }
 
 .brand-text {
